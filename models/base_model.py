@@ -41,15 +41,17 @@ class BaseModel:
         else:
             self.id = str(uuid.uuid4())
             self.created_at = self.updated_at = datetime.now()
-#            models.storage.new(self)
 
     def __str__(self):
         """returns a string
         Return:
             returns a string of class name, id, and dictionary
         """
+        my_dict = dict(self.__dict__)
+        if '_sa_instance_state' in my_dict:
+            del my_dict['_sa_instance_state']
         return "[{}] ({}) {}".format(
-            type(self).__name__, self.id, self.__dict__)
+            type(self).__name__, self.id, my_dict)
 
     def __repr__(self):
         """return a string representaion
