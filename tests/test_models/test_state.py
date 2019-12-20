@@ -6,7 +6,7 @@ from models import state
 from models.state import State
 from models.base_model import BaseModel, Base
 import pep8
-
+import sqlalchemy
 
 class TestState(unittest.TestCase):
     """this will test the State class"""
@@ -87,8 +87,8 @@ class TestState(unittest.TestCase):
     @unittest.skipIf(os.getenv("HBNB_TYPE_STORAGE") != "db", "not a database")
     def test_attribute_types_State_db(self):
         """test attribute type for State"""
-        self.assertEqual(type(self.city.__tablename__), str)
-        self.assertEqual(type(self.city.cities), sqlalchemy.orm.collections.
+        self.assertEqual(type(self.state.__tablename__), str)
+        self.assertEqual(type(self.state.cities), sqlalchemy.orm.collections.
                          InstrumentedList)
 
     def test_save_State(self):
