@@ -4,10 +4,9 @@ from models.base_model import BaseModel, Base
 from models.user import User
 from models.state import State
 from models.city import City
-# from models.amenity import Amenity
+from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from os import getenv
@@ -21,7 +20,7 @@ class DBStorage:
     """
     __engine = None
     __session = None
-    all_classes = {"State", "City"}#, "User", "Amenity", "Place", "Review"}
+    all_classes = {"State", "City", "User", "Amenity", "Place", "Review"}
 
     def __init__(self):
         """create the engine and links it to the MySQL database and user"""
