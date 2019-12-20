@@ -8,6 +8,7 @@ from models.base_model import BaseModel, Base
 import pep8
 import sqlalchemy
 
+
 class TestCity(unittest.TestCase):
     """this will test the city class"""
 
@@ -89,7 +90,7 @@ class TestCity(unittest.TestCase):
         self.assertEqual(type(self.city.places), sqlalchemy.orm.collections.
                          InstrumentedList)
 
-    @unittest.skip("skip test until its fixed")
+    @unittest.skipIf(os.getenv("HBNB_TYPE_STORAGE") == "db", "skip test")
     def test_save_City(self):
         """test if the save works"""
         self.city.save()

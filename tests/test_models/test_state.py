@@ -8,6 +8,7 @@ from models.base_model import BaseModel, Base
 import pep8
 import sqlalchemy
 
+
 class TestState(unittest.TestCase):
     """this will test the State class"""
 
@@ -91,6 +92,7 @@ class TestState(unittest.TestCase):
         self.assertEqual(type(self.state.cities), sqlalchemy.orm.collections.
                          InstrumentedList)
 
+    @unittest.skipIf(os.getenv("HBNB_TYPE_STORAGE") == "db", "skip test")
     def test_save_State(self):
         """test if the save works"""
         self.state.save()
