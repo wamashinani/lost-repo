@@ -25,6 +25,7 @@ def do_pack():
     except:
         return None
 
+
 def do_deploy(archive_path):
     """
     upload the archive to the /tmp/ directory of the web server
@@ -51,6 +52,7 @@ def do_deploy(archive_path):
         return True
     except:
         return False
+
 
 def deploy():
     """calls do_pack() and do_deploy()"""
