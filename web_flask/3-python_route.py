@@ -28,4 +28,5 @@ def python_text(text="is cool"):
     """view function"""
     return 'Python %s' % text.replace('_', ' ')
 
-app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
