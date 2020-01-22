@@ -18,6 +18,7 @@ def hbnb():
     return render_template('100-hbnb.html', all_states=all_states,
                            all_amenities=all_amenities, all_places=all_places)
 
+
 @app.teardown_appcontext
 def teardown(self):
     """function that removes the current SQLAlchemy Session"""

@@ -22,6 +22,7 @@ def states_id(id=None):
     return render_template('9-states.html', all_states=all_states, id=id,
                            state_found=state_found)
 
+
 @app.teardown_appcontext
 def teardown(self):
     """function that removes the current SQLAlchemy Session"""
