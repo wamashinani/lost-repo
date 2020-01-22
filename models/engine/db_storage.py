@@ -87,7 +87,7 @@ class DBStorage:
 #    In Project 0x0F, I always closed sessions prior to terminating
 #    That is a question we should ask
 #
-#    def close(self):
-#        """close the current database session
-#        """
-#        self.__session.close()
+    def close(self):
+        """close the current database session
+        """
+        self.__session.close()
