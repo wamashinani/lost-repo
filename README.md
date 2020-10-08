@@ -1,54 +1,44 @@
-# HBNB
+# Project: AirBnB Clone (@Holberton)
 
-This is the console /command interpreter for the Holberton Airbnb clone project. The console can be used to store objects in and retrieve objects from a JSON.
+<p align='center'>
+  <img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/HBTN-hbnb-Final.png" width="360" height=auto />
+</p>
 
-### Supported classes:
-* BaseModel
-* User
-* State
-* City
-* Amenity
-* Place
-* Review
+- This repository covers Part 3, Part 4 & Part 5 of an AirBnB Clone project in Python/Flask.
 
-### Commands:
-* create - create an object
-* show - show an object (based on id)
-* destroy - destroy an object
-* all - show all objects, of one type or all types
-* quit/EOF - quit the console
-* help - see descriptions of commands
+-  The full-stack project is divided into 7 Parts:
 
-To start, navigate to the project folder and enter `./console.py` in the shell.
+|                                                      Parts                                                    |                    Description                    |
+| :------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------  |
+| [1. Console](https://github.com/PierreBeaujuge/AirBnB_clone)                                                  |   Data model management via command interpreter   |
+| [2. Web static](https://github.com/PierreBeaujuge/AirBnB_clone/tree/master/web_static)                        |             Landing page in HTML and CSS          |
+| [3. MySQL storage](https://github.com/PierreBeaujuge/AirBnB_clone_v2/blob/master/models/engine/db_storage.py) | Migration of local file storage to MySQL database |
+| [4. Deploy static](https://github.com/PierreBeaujuge/AirBnB_clone_v2/blob/master/3-deploy_web_static.py)      |        Deploy web static on an Nginx server       |
+| [5. Web framework - templating](https://github.com/PierreBeaujuge/AirBnB_clone_v2/tree/master/web_flask)      |         Web server deployment with Flask          |
+| 6. RESTful API                                                                                                |      Creating endpoints for CRUD operations       |
+| 7. Web dynamic                                                                                                | Loading of objects from client side using Jquery  |
 
-#### Create
-`create <class name>`
-Ex:
-`create BaseModel`
+### Expected web static for the final product:
 
-#### Show
-`show <class name> <object id>`
-Ex:
-`show User my_id`
+<p align="center">
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/8-index.png">
+</p>
 
-#### Destroy
-`destroy <class name> <object id>`
-Ex:
-`destroy Place my_place_id`
+### Web Stack for building the product:
 
-#### All
-`all` or `all <class name>`
-Ex:
-`all` or `all State`
+<p align="center">
+  <img src="https://i.imgur.com/lgZnZrz.png">
+</p>
 
-#### Quit
-`quit` or `EOF`
+### Schemas:
 
-#### Help
-`help` or `help <command>`
-Ex:
-`help` or `help quit`
+<p align="center">
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/289/AirBnb_DB_diagramm.jpg">
+</p>
 
-Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
-Ex:
-`City.show(my_city_id)`
+---
+
+## Author
+
+**Pierre Beaujuge** - [PierreBeaujuge](https://github.com/PierreBeaujuge) | [LinkedIn](https://www.linkedin.com/in/pierre-beaujuge-81b75a137/) at [Holberton
+School](http://holbertonschool.com)
